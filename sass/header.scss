@@ -1,0 +1,81 @@
+@import 'utilities/variables';
+
+.site-header__menu {
+	display: flex;
+    justify-content: space-between;
+	> img {
+		height: 173px;
+		object-fit: contain;
+        padding-left: 50px;
+	}
+	& .desktop-navigation {
+        width: 550px;
+        margin-top: 20px;
+        border-radius: 60px 0 0 60px;
+        background-color: #F19ED4;
+        color: white;
+		display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        .menu-items {
+            margin-left: 20px;
+        }
+        > div {
+            > p {
+                padding: 0 10px;
+                font-family: "Dosis";
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+	}
+	& .mobile-navigation {
+		display: none;
+	}
+    .menu-items, .menu-social {
+        display: flex;
+    }
+    .menu-social {
+        > img {
+            height: 35px;
+            padding: 5px;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .site-header__menu {
+        > img {
+            padding-left: 10px;
+        }
+        & .desktop-navigation {
+            min-height: 100px;
+        }
+    }
+    
+    .menu-items {
+        flex-wrap: wrap;
+        > p {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+	.site-header__menu {
+		> img {
+			margin: auto;
+		}
+		& .desktop-navigation {
+			display: none;
+		}
+		& .mobile-navigation {
+			display: block;
+			& img {
+				height: 50px;
+			}
+		}
+	}
+}
