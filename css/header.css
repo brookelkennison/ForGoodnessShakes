@@ -1,15 +1,53 @@
+@media screen and (min-width: 769px) {
+  #toggle {
+    display: none; } }
+@media screen and (max-width: 768px) {
+  #popout {
+    z-index: 1;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background: #191919;
+    background: rgba(25, 25, 25, 0.9);
+    color: white;
+    top: 0px;
+    left: -250px;
+    overflow: auto; }
+
+  #mobile-icon {
+    float: right;
+    position: fixed;
+    top: 60px;
+    right: 45px;
+    width: 28px;
+    height: 24px; }
+
+  .nav-menu li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    width: 100%; }
+
+  .nav-menu li:hover {
+    background: #ccc; }
+
+  .nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%; } }
 .site-header__menu {
   display: flex;
   justify-content: space-between; }
-  .site-header__menu > img {
-    height: 173px;
-    object-fit: contain;
-    padding-left: 50px; }
+  .site-header__menu > .custom-logo-link {
+    max-width: 250px; }
+    .site-header__menu > .custom-logo-link > img {
+      height: 173px;
+      object-fit: contain;
+      padding-left: 10px; }
   .site-header__menu .desktop-navigation {
     width: 550px;
     margin-top: 20px;
     border-radius: 60px 0 0 60px;
-    background-color: #F19ED4;
+    background-color: #f19ed4;
     color: white;
     display: flex;
     flex-direction: row;
@@ -18,22 +56,25 @@
     height: 50px; }
     .site-header__menu .desktop-navigation .menu-items {
       margin-left: 20px; }
-    .site-header__menu .desktop-navigation > div > p {
-      padding: 0 10px;
-      font-family: "Dosis";
-      font-weight: 700;
-      font-size: 20px; }
   .site-header__menu .mobile-navigation {
     display: none; }
-  .site-header__menu .menu-items, .site-header__menu .menu-social {
+  .site-header__menu .menu,
+  .site-header__menu .menu-social {
     display: flex; }
+  .site-header__menu .menu-item {
+    list-style: none; }
+    .site-header__menu .menu-item > a {
+      color: white;
+      text-decoration: none;
+      padding: 0 10px;
+      font-family: 'Dosis';
+      font-weight: 700;
+      font-size: 20px; }
   .site-header__menu .menu-social > img {
     height: 35px;
     padding: 5px; }
 
 @media (max-width: 768px) {
-  .site-header__menu > img {
-    padding-left: 10px; }
   .site-header__menu .desktop-navigation {
     min-height: 100px; }
 
@@ -43,7 +84,8 @@
       margin: 0; } }
 @media (max-width: 436px) {
   .site-header__menu > img {
-    margin: auto; }
+    margin: auto;
+    padding-left: 50px; }
   .site-header__menu .desktop-navigation {
     display: none; }
   .site-header__menu .mobile-navigation {

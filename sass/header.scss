@@ -1,72 +1,122 @@
 @import 'utilities/variables';
 
+@media screen and (min-width: 769px) {
+	#toggle {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    #popout {
+        z-index: 1;
+        position: fixed;
+        height: 100%;
+        width: 250px;
+        background: rgb(25, 25, 25);
+        background: rgba(25, 25, 25, 0.9);
+        color: white;
+        top: 0px;
+        left: -250px;
+        overflow: auto;
+    }
+	#mobile-icon {
+		float: right;
+		position: fixed;
+		top: 60px;
+		right: 45px;
+		width: 28px;
+		height: 24px;
+	}
+
+	.nav-menu li {
+		border-bottom: 1px solid #eee;
+		padding: 20px;
+		width: 100%;
+	}
+
+	.nav-menu li:hover {
+		background: #ccc;
+	}
+
+	.nav-menu li a {
+		color: #fff;
+		text-decoration: none;
+		width: 100%;
+	}
+}
+
 .site-header__menu {
 	display: flex;
-    justify-content: space-between;
-	> img {
-		height: 173px;
-		object-fit: contain;
-        padding-left: 50px;
+	justify-content: space-between;
+	> .custom-logo-link {
+		max-width: 250px;
+		> img {
+			height: 173px;
+			object-fit: contain;
+			padding-left: 10px;
+		}
 	}
 	& .desktop-navigation {
-        width: 550px;
-        margin-top: 20px;
-        border-radius: 60px 0 0 60px;
-        background-color: #F19ED4;
-        color: white;
+		width: 550px;
+		margin-top: 20px;
+		border-radius: 60px 0 0 60px;
+		background-color: #f19ed4;
+		color: white;
 		display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 50px;
-        .menu-items {
-            margin-left: 20px;
-        }
-        > div {
-            > p {
-                padding: 0 10px;
-                font-family: "Dosis";
-                font-weight: 700;
-                font-size: 20px;
-            }
-        }
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 50px;
+		.menu-items {
+			margin-left: 20px;
+		}
 	}
 	& .mobile-navigation {
 		display: none;
 	}
-    .menu-items, .menu-social {
-        display: flex;
-    }
-    .menu-social {
-        > img {
-            height: 35px;
-            padding: 5px;
-        }
-    }
+	.menu,
+	.menu-social {
+		display: flex;
+	}
+	.menu-item {
+		list-style: none;
+		> a {
+			color: white;
+			text-decoration: none;
+			padding: 0 10px;
+			font-family: 'Dosis';
+			font-weight: 700;
+			font-size: 20px;
+		}
+	}
+	.menu-social {
+		> img {
+			height: 35px;
+			padding: 5px;
+		}
+	}
 }
 
 @media (max-width: $breakpoint-tablet) {
-    .site-header__menu {
-        > img {
-            padding-left: 10px;
-        }
-        & .desktop-navigation {
-            min-height: 100px;
-        }
-    }
-    
-    .menu-items {
-        flex-wrap: wrap;
-        > p {
-            margin: 0;
-        }
-    }
+	.site-header__menu {
+		& .desktop-navigation {
+			min-height: 100px;
+		}
+	}
+
+	.menu-items {
+		flex-wrap: wrap;
+		> p {
+			margin: 0;
+		}
+	}
 }
 
 @media (max-width: $breakpoint-mobile) {
 	.site-header__menu {
 		> img {
 			margin: auto;
+			padding-left: 50px;
 		}
 		& .desktop-navigation {
 			display: none;

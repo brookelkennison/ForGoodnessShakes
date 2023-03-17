@@ -71,7 +71,7 @@
 }
 
 @font-face {
-    font-family: 'Libre Baskerville';
+    font-family: 'Libre Baskerville Regular';
     src: url('LibreBaskerville-Regular.woff2') format('woff2'),
         url('LibreBaskerville-Regular.woff') format('woff');
     font-weight: normal;

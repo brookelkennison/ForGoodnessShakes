@@ -1,1 +1,15 @@
 @import 'utilities/variables';
+
+
+.site-footer {
+    height: 300px;
+    background-color: $yellow;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    & img {
+        width: 220px;
+        bottom: 100px;
+        position: relative;
+    }
+}

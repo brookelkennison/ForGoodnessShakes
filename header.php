@@ -16,30 +16,32 @@
             <span class="js-search-trigger site-header__search-trigger"><i class="fa fa-search" aria-hidden="true"></i></span>
             <i class="site-header__menu-trigger fa fa-bars" aria-hidden="true"></i>
             <div class="site-header__menu group">
-                <img src="<?php echo get_theme_file_uri('./assets/logo.png') ?>" alt="logo">
+                <?php if (has_custom_logo()) {
+                    echo the_custom_logo();
+                } else { ?>
+                    <h1 class="site-title">
+                        <a href="<?php echo site_url(); ?>">
+                            <strong><?php echo get_bloginfo('name'); ?>
+                            </strong>
+                        </a>
+                    </h1>
+                <?php } ?>
                 <nav class="desktop-navigation">
                     <div class="menu-items">
-                        <p>
-                            events
-                        </p>
-                        <p>
-                            about
-                        </p>
-                        <p>
-                            contact
-                        </p>
-                        <p>
-                            milkshake menu
-                        </p>
+                        <?php if (has_nav_menu('main')) {
+                            wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'nav-menu'));
+                        } ?>
                     </div>
                     <div class="menu-social">
                         <img src="<?php echo get_theme_file_uri('./assets/facebook.png') ?>" alt="facebook">
                         <img src="<?php echo get_theme_file_uri('./assets/instagram.png') ?>" alt="instagram">
                     </div>
                 </nav>
-                <nav class="mobile-navigation">
-                    <img src="<?php echo get_theme_file_uri('./assets/menu-rounded.png') ?>" alt="mobile-menu">
-                </nav>
+                <div id="mobile-icon">
+                    <img src="<?php echo get_theme_file_uri('./assets/menu-rounded.png') ?>" alt="Show" />
+                </div>
+                <div id="popout">
+                    <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'nav-menu')); ?>
+                </div>
             </div>
-        </div>
     </header>

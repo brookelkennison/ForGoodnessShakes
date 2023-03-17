@@ -2,6 +2,9 @@
 if (!is_admin()) {
     wp_enqueue_style('lilac_pig_main_styles', get_theme_file_uri('/build/index.css'));
 }
+
+wp_enqueue_script('wpb_slidepanel', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20160909', true);
+
 add_theme_support('custom-logo');
 add_theme_support('post-thumbnails');
 
@@ -9,8 +12,7 @@ function register_my_menus()
 {
     register_nav_menus(
         array(
-            'nav-menu-left' => __('Navigation Menu Left'),
-            'nav-menu-right' => __('Navigation Menu Right')
+            'main' => __('Main Menu'),
         )
     );
 }
