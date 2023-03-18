@@ -1,0 +1,10 @@
+@import url('./fonts/stylesheet.css');
+
+@import "./modules/header.scss";
+@import "./modules/main.scss";
+@import "./modules/footer.scss";
+
+
+img {
+    max-width: 100%;
+}

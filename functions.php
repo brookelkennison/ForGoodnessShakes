@@ -3,7 +3,7 @@ if (!is_admin()) {
     wp_enqueue_style('lilac_pig_main_styles', get_theme_file_uri('/build/index.css'));
 }
 
-wp_enqueue_script('wpb_slidepanel', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20160909', true);
+wp_enqueue_script('auburn-javascript', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', true);
 
 add_theme_support('custom-logo');
 add_theme_support('post-thumbnails');

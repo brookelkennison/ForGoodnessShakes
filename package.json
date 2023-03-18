@@ -1,0 +1,23 @@
+{
+  "name": "kennison-creative-auburn-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "wp-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brookelkennison/ForGoodnessShakes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brookelkennison/ForGoodnessShakes/issues"
+  },
+  "homepage": "https://github.com/brookelkennison/ForGoodnessShakes#readme",
+  "dependencies": {
+    "@wordpress/scripts": "^26.0.0"
+  }
+}
