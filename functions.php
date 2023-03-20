@@ -27,6 +27,34 @@ function wordpress_customizer($wp_customize)
         )
     );
 
+    $wp_customize->add_section(
+        'about_us_options',
+        array(
+            'title' => __('About Us', 'about_us')
+        )
+    );
+
+    $wp_customize->add_setting(
+        'about_us_image',
+        array(
+            'default' => '',
+            'type' => 'theme_mod',
+            'transport'  => 'postMessage',
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Image_Control(
+            $wp_customize,
+            'about_us_image',
+            array(
+                'label' => __('About Us Image', 'about_us'),
+                'settings' => 'about_us_image',
+                'section' => 'about_us_options'
+            )
+        )
+    );
+
     $wp_customize->add_setting(
         'main_section_image',
         array(

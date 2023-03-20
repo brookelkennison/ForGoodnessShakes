@@ -1,4 +1,4 @@
-@import 'utilities/variables';
+@import '../utilities/variables';
 
 body {
 	margin: 0;
@@ -65,6 +65,9 @@ hb {
 	& a {
 		display: flex;
 		justify-content: end;
+	}
+	& img {
+		border-radius: 50% 50% 0 0;
 	}
 }
 

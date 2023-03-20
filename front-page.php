@@ -15,7 +15,7 @@
             <h4>Doing something good by serving something great.</h4>
         </div>
         <div class="call-to-action">
-            <img src="<?php echo get_theme_file_uri('./assets/about-us.png') ?>" alt="" />
+            <img src="<?php echo get_theme_mod('about_us_image') ?>" alt="" />
             <a>COME SAY HI -></a>
         </div>
     </div>

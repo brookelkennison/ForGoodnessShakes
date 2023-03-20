@@ -1,52 +1,127 @@
-/*
-Error: File to import not found or unreadable: utilities/variables.
-       Load path: /Users/brookekennison/Local Sites/for-goodness-shakes/app/public/wp-content/themes/Kennison Creative Auburn Theme/css/modules
-        on line 1 of /Users/brookekennison/Local Sites/for-goodness-shakes/app/public/wp-content/themes/Kennison Creative Auburn Theme/css/modules/main.scss
+body {
+  margin: 0;
+  background-color: #fff9e5; }
 
-1: @import 'utilities/variables';
-2: 
-3: body {
-4: 	margin: 0;
-5: 	background-color: #fff9e5;
-6: }
+h1 {
+  font-size: 36px;
+  text-align: center; }
 
-Backtrace:
-/Users/brookekennison/Local Sites/for-goodness-shakes/app/public/wp-content/themes/Kennison Creative Auburn Theme/css/modules/main.scss:1
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:44:in `import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
-/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: utilities/variables.\A        Load path: /Users/brookekennison/Local Sites/for-goodness-shakes/app/public/wp-content/themes/Kennison Creative Auburn Theme/css/modules\A         on line 1 of /Users/brookekennison/Local Sites/for-goodness-shakes/app/public/wp-content/themes/Kennison Creative Auburn Theme/css/modules/main.scss\A \A 1: @import 'utilities/variables';\A 2: \A 3: body {\A 4: 	margin: 0;\A 5: 	background-color: #fff9e5;\A 6: }"; }
+h1,
+h2 {
+  font-family: 'Bukhari Script';
+  color: #66645c; }
+
+h2 {
+  font-size: 25px;
+  margin: 0; }
+
+h4 {
+  font-family: 'Dosis';
+  color: #e65cc8;
+  padding: 0;
+  margin: 0;
+  font-size: 26px; }
+
+p {
+  font-family: 'Libre Baskerville Regular';
+  font-size: 18px;
+  letter-spacing: 2px;
+  padding: 15px;
+  text-align: justify; }
+
+a {
+  font-family: 'Dosis';
+  color: #61DBE7;
+  font-size: 24px; }
+
+.flex {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+hb {
+  height: 50px;
+  display: block; }
+
+.truckstripe {
+  width: 100%;
+  position: relative; }
+
+.call-to-action {
+  position: relative; }
+  .call-to-action a {
+    display: flex;
+    justify-content: end; }
+  .call-to-action img {
+    border-radius: 50% 50% 0 0; }
+
+.events {
+  height: 474px; }
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.side-spacing {
+  margin: 0 15px; }
+
+.center-text {
+  width: 100%;
+  display: block;
+  text-align: center; }
+
+.retro-corner {
+  width: 300px; }
+
+.where-we-will-be {
+  padding-left: 100px; }
+
+.move-up {
+  position: relative;
+  bottom: 199px; }
+
+.milkshake-grid {
+  display: flex;
+  justify-content: center; }
+  .milkshake-grid > img {
+    width: 33%; }
+
+.milkshakes p {
+  text-align: left;
+  margin: 0;
+  padding: 0 0 0 10px; }
+.milkshakes a {
+  display: block;
+  padding: 15px 0 0 21px; }
+.milkshakes .flex-column {
+  align-items: flex-start;
+  justify-content: center; }
+
+.smiley {
+  object-fit: contain;
+  width: 50%; }
+
+.banner {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden; }
+  .banner p {
+    display: inline-block;
+    animation: marquee 36s linear infinite;
+    font-family: 'Dosis';
+    background: #F19ED4;
+    color: #fff; }
+
+.banner2 {
+  animation-delay: 2.5s; }
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(-100%, 0); } }
+
+/*# sourceMappingURL=main.css.map */

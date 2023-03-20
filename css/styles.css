@@ -176,6 +176,8 @@ hb {
   .call-to-action a {
     display: flex;
     justify-content: end; }
+  .call-to-action img {
+    border-radius: 50% 50% 0 0; }
 
 .events {
   height: 474px; }
