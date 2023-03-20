@@ -1,6 +1,6 @@
 <?php
 if (!is_admin()) {
-    wp_enqueue_style('lilac_pig_main_styles', get_theme_file_uri('/build/index.css'));
+    wp_enqueue_style('lilac_pig_main_styles', get_theme_file_uri('/css/styles.css'));
 }
 
 wp_enqueue_script('auburn-javascript', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', true);

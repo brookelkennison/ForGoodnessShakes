@@ -37,10 +37,8 @@
                         <img src="<?php echo get_theme_file_uri('./assets/instagram.png') ?>" alt="instagram">
                     </div>
                 </nav>
-                <div id="mobile-icon" class="hide">
-                    <img src="<?php echo get_theme_file_uri('./assets/menu-rounded.png') ?>" alt="Show" />
-                </div>
-                <div id="popout">
+                <img class="mobile-menu-icon" src="<?php echo get_theme_file_uri('./assets/menu-rounded.png') ?>" alt="Show" />
+                <div class="mobile-menu">
                     <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_class' => 'nav-menu')); ?>
                 </div>
             </div>
