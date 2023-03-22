@@ -315,6 +315,17 @@ hb {
     .milkshakes p {
       padding: auto; } }
 @media (max-width: 800px) {
+  .flex-column {
+    align-items: center; }
+
+  .move-down {
+    top: 475px; }
+
+  .slogan h2 {
+    font-size: 18px; }
+  .slogan h4 {
+    font-size: 18px; }
+
   .where-we-will-be {
     background-color: unset; }
     .where-we-will-be h2 {
