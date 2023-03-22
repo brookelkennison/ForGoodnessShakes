@@ -27,16 +27,57 @@
     <div class="where-we-will-be move-up">
         <h2>Where we will be...</h2>
         <p>We are based out of Wabash, Indiana. We serve the entire state of Indiana and are available for private events. See below for our list of upcoming events.</p>
-        <div>
-
+        <div class="front-page-events">
+            <?php
+            $today = date('Ymd');
+            $homepageEvents = new WP_Query(array(
+                'posts_per_page' => 4,
+                'post_type' => 'event',
+                'meta_key' => 'event_date',
+                'orderby' => 'meta_value_num',
+                'order' => 'ASC',
+                'meta_query' => array(
+                    array(
+                        'key' => 'event_date',
+                        'compare' => '>=',
+                        'value' => $today,
+                    ),
+                )
+            ));
+            if ($homepageEvents->have_posts()) {
+                while ($homepageEvents->have_posts()) {
+                    $homepageEvents->the_post(); ?>
+                    <div class="event-summary">
+                        <div class="event-date">
+                            <span class="event-summary__day"><?php
+                                                                $eventDate = new DateTime(get_field('event_date'));
+                                                                echo $eventDate->format('d');
+                                                                ?></span>
+                            <span class="event-summary__month"><?php
+                                                                $eventDate = new DateTime(get_field('event_date'));
+                                                                echo $eventDate->format('M');
+                                                                ?></span>
+                        </div>
+                        <div class="event-summary__content">
+                            <h5 class="event-summary__title headline headline--tiny"><?php the_title() ?></h5>
+                            <p><?php echo get_field('location') ?></p>
+                        </div>
+                    </div>
+                <?php
+                }
+            } else { ?>
+                <div>
+                    <h5>No Upcoming Events</h5>
+                </div>
+            <?php } ?>
         </div>
     </div>
-    <div class="move-up flex-column">
+    <div class="move-up flex-column view-all-events">
         <a>SEE ALL EVENTS -></a>
         <a>BOOK US FOR AN EVENT -></a>
     </div>
 </section>
-<section>
+<section class="move-down">
     <div class="banner">
         <p>TRAVELING MILKSHAKES IN INDIANA - TRAVELING MILKSHAKES IN INDIANA - TRAVELING MILKSHAKES IN INDIANA - TRAVELING MILKSHAKES IN INDIANA - </p>
         <p>TRAVELING MILKSHAKES IN INDIANA - TRAVELING MILKSHAKES IN INDIANA - TRAVELING MILKSHAKES IN INDIANA - TRAVELING MILKSHAKES IN INDIANA - </p>
@@ -59,8 +100,8 @@
         <a>SEE THE MENU -></a>
     </div>
 </section>
-<hb></hb>
-<section class="giving-back">
+<hb class="move-down"></hb>
+<section class="giving-back move-down">
     <img src="<?php echo get_theme_file_uri('./assets/giving-back.png') ?>" alt="" />
     <div class="side-spacing">
         <p>By providing a quality product to our customers, we promise to donate 30% of our proceeds to areas of need in our community ...</p>
