@@ -285,7 +285,7 @@ a:hover {
     margin: 0;
     text-align: start; }
 
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
   .front-page-events {
     grid-template-columns: 300px 300px; } }
 .move-up {
@@ -417,6 +417,14 @@ a:hover {
     transform: translate(0, 0); }
   100% {
     transform: translate(-100%, 0); } }
+.generic-content .has-background {
+  background-color: #fff9e5 !important; }
+.generic-content p {
+  text-align: left; }
+
+.events-page > div {
+  grid-template-columns: auto; }
+
 .site-footer {
   top: 400px;
   position: relative;
