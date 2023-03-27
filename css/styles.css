@@ -126,7 +126,8 @@ body {
 
 h1 {
   font-size: 36px;
-  text-align: center; }
+  text-align: center;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2)); }
 
 h1,
 h2 {
@@ -134,7 +135,7 @@ h2 {
   color: #66645c; }
 
 h2 {
-  font-size: 25px;
+  font-size: 37px;
   margin: 0; }
 
 h4 {
@@ -142,7 +143,7 @@ h4 {
   color: #e65cc8;
   padding: 0;
   margin: 0;
-  font-size: 26px; }
+  font-size: 40px; }
 
 p {
   font-family: 'Libre Baskerville Regular';
@@ -154,7 +155,7 @@ p {
 a {
   font-family: 'Dosis';
   color: #61DBE7;
-  font-size: 24px; }
+  font-size: 35px; }
 
 .flex {
   display: flex; }
@@ -182,9 +183,23 @@ hb {
 .events {
   height: 474px; }
 
+a {
+  transition: all 0.2s ease-in-out;
+  text-decoration: none; }
+
+a:hover {
+  transform: scale(1.1);
+  cursor: pointer; }
+
 @media (min-width: 800px) {
   .events {
-    width: 90% !important; } }
+    width: 90% !important; }
+
+  h1 {
+    font-size: 60px; }
+
+  .cta a {
+    font-size: 37px; } }
 .slogan {
   display: flex;
   flex-direction: column;
@@ -206,6 +221,9 @@ hb {
   width: 300px; }
 
 @media (min-width: 800px) {
+  a {
+    font-size: 26px; }
+
   .retro-corner {
     width: 500px; }
 
@@ -226,12 +244,14 @@ hb {
     color: #FFF9E5;
     filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2)); }
   .where-we-will-be p {
-    width: 675px; }
+    max-width: 675px;
+    margin: auto; }
 
 .front-page-events {
   justify-content: center;
   font-family: 'Dosis';
   margin: auto;
+  padding: 45px;
   display: grid;
   grid-row: auto auto;
   grid-column-gap: 60px;
@@ -244,20 +264,24 @@ hb {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 40px;
   font-family: 'Dosis'; }
   .event-summary .event-date {
+    font-size: 31px;
+    line-height: 38px;
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .event-summary .event-summary__day {
+    font-size: 45px; }
   .event-summary .event-summary__content h5 {
     white-space: nowrap;
     padding: 0;
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
+    padding: 0 10px;
     width: fit-content; }
   .event-summary .event-summary__content p {
-    padding: 10px;
+    padding: 0 10px;
     margin: 0;
     text-align: start; }
 
@@ -315,6 +339,18 @@ hb {
     .milkshakes p {
       padding: auto; } }
 @media (max-width: 800px) {
+  .event-summary__day {
+    font-size: 31px !important; }
+
+  a {
+    font-size: 26px; }
+
+  .smiley {
+    width: 25%; }
+
+  h2 {
+    font-size: 30px; }
+
   .flex-column {
     align-items: center; }
 
@@ -361,7 +397,7 @@ hb {
 
   .front-page-events {
     grid-column-gap: 40px;
-    grid-row-gap: 10px; } }
+    grid-row-gap: 36px; } }
 .banner {
   margin: 0 auto;
   white-space: nowrap;

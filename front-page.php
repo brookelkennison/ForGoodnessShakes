@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
 <section class="">
-    <div class="side-spacing">
+    <div class="side-spacing cta">
         <h1>Traveling to serve you gourmet milkshakes</h1>
-        <a class="center-text">WE WILL SEE YOU THERE -></a>
+        <a class="center-text" href="<?php echo  site_url() . '/events' ?>">WE WILL SEE YOU THERE -></a>
     </div>
     <img class="truckstripe" src="<?php echo get_theme_file_uri('./assets/retro-stripe-and-truck.png') ?>" alt="" />
 </section>
@@ -73,8 +73,8 @@
         </div>
     </div>
     <div class="move-up flex-column view-all-events">
-        <a>SEE ALL EVENTS -></a>
-        <a>BOOK US FOR AN EVENT -></a>
+        <a style="color: #ff914e">SEE ALL EVENTS -></a>
+        <a style="color: #e661c9">BOOK US FOR AN EVENT -></a>
     </div>
 </section>
 <section class="move-down">
