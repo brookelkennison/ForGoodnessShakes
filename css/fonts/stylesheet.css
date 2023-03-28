@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-ExtraBold.eot');
+    src: url('Dosis-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-ExtraBold.woff2') format('woff2'),
+        url('Dosis-ExtraBold.woff') format('woff'),
+        url('Dosis-ExtraBold.ttf') format('truetype'),
+        url('Dosis-ExtraBold.svg#Dosis-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-Light.eot');
+    src: url('Dosis-Light.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-Light.woff2') format('woff2'),
+        url('Dosis-Light.woff') format('woff'),
+        url('Dosis-Light.ttf') format('truetype'),
+        url('Dosis-Light.svg#Dosis-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-Bold.eot');
+    src: url('Dosis-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-Bold.woff2') format('woff2'),
+        url('Dosis-Bold.woff') format('woff'),
+        url('Dosis-Bold.ttf') format('truetype'),
+        url('Dosis-Bold.svg#Dosis-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-Medium.eot');
+    src: url('Dosis-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-Medium.woff2') format('woff2'),
+        url('Dosis-Medium.woff') format('woff'),
+        url('Dosis-Medium.ttf') format('truetype'),
+        url('Dosis-Medium.svg#Dosis-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-ExtraBold_1.eot');
+    src: url('Dosis-ExtraBold_1.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-ExtraBold_1.woff2') format('woff2'),
+        url('Dosis-ExtraBold_1.woff') format('woff'),
+        url('Dosis-ExtraBold_1.ttf') format('truetype'),
+        url('Dosis-ExtraBold_1.svg#Dosis-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bukhari Script';
+    src: url('BukhariScript.eot');
+    src: url('BukhariScript.eot?#iefix') format('embedded-opentype'),
+        url('BukhariScript.woff2') format('woff2'),
+        url('BukhariScript.woff') format('woff'),
+        url('BukhariScript.ttf') format('truetype'),
+        url('BukhariScript.svg#BukhariScript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-Light_1.eot');
+    src: url('Dosis-Light_1.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-Light_1.woff2') format('woff2'),
+        url('Dosis-Light_1.woff') format('woff'),
+        url('Dosis-Light_1.ttf') format('truetype'),
+        url('Dosis-Light_1.svg#Dosis-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-ExtraLight.eot');
+    src: url('Dosis-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-ExtraLight.woff2') format('woff2'),
+        url('Dosis-ExtraLight.woff') format('woff'),
+        url('Dosis-ExtraLight.ttf') format('truetype'),
+        url('Dosis-ExtraLight.svg#Dosis-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-Bold_1.eot');
+    src: url('Dosis-Bold_1.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-Bold_1.woff2') format('woff2'),
+        url('Dosis-Bold_1.woff') format('woff'),
+        url('Dosis-Bold_1.ttf') format('truetype'),
+        url('Dosis-Bold_1.svg#Dosis-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-ExtraLight_1.eot');
+    src: url('Dosis-ExtraLight_1.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-ExtraLight_1.woff2') format('woff2'),
+        url('Dosis-ExtraLight_1.woff') format('woff'),
+        url('Dosis-ExtraLight_1.ttf') format('truetype'),
+        url('Dosis-ExtraLight_1.svg#Dosis-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-Regular.eot');
+    src: url('Dosis-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-Regular.woff2') format('woff2'),
+        url('Dosis-Regular.woff') format('woff'),
+        url('Dosis-Regular.ttf') format('truetype'),
+        url('Dosis-Regular.svg#Dosis-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-Medium_1.eot');
+    src: url('Dosis-Medium_1.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-Medium_1.woff2') format('woff2'),
+        url('Dosis-Medium_1.woff') format('woff'),
+        url('Dosis-Medium_1.ttf') format('truetype'),
+        url('Dosis-Medium_1.svg#Dosis-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-Regular_1.eot');
+    src: url('Dosis-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-Regular_1.woff2') format('woff2'),
+        url('Dosis-Regular_1.woff') format('woff'),
+        url('Dosis-Regular_1.ttf') format('truetype'),
+        url('Dosis-Regular_1.svg#Dosis-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bukhari Script';
+    src: url('BukhariScript_1.eot');
+    src: url('BukhariScript_1.eot?#iefix') format('embedded-opentype'),
+        url('BukhariScript_1.woff2') format('woff2'),
+        url('BukhariScript_1.woff') format('woff'),
+        url('BukhariScript_1.ttf') format('truetype'),
+        url('BukhariScript_1.svg#BukhariScript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('LibreBaskerville-Regular.eot');
+    src: url('LibreBaskerville-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LibreBaskerville-Regular.woff2') format('woff2'),
+        url('LibreBaskerville-Regular.woff') format('woff'),
+        url('LibreBaskerville-Regular.ttf') format('truetype'),
+        url('LibreBaskerville-Regular.svg#LibreBaskerville-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('LibreBaskerville-Bold.eot');
+    src: url('LibreBaskerville-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LibreBaskerville-Bold.woff2') format('woff2'),
+        url('LibreBaskerville-Bold.woff') format('woff'),
+        url('LibreBaskerville-Bold.ttf') format('truetype'),
+        url('LibreBaskerville-Bold.svg#LibreBaskerville-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('LibreBaskerville-Bold_1.eot');
+    src: url('LibreBaskerville-Bold_1.eot?#iefix') format('embedded-opentype'),
+        url('LibreBaskerville-Bold_1.woff2') format('woff2'),
+        url('LibreBaskerville-Bold_1.woff') format('woff'),
+        url('LibreBaskerville-Bold_1.ttf') format('truetype'),
+        url('LibreBaskerville-Bold_1.svg#LibreBaskerville-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-SemiBold.eot');
+    src: url('Dosis-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-SemiBold.woff2') format('woff2'),
+        url('Dosis-SemiBold.woff') format('woff'),
+        url('Dosis-SemiBold.ttf') format('truetype'),
+        url('Dosis-SemiBold.svg#Dosis-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('Dosis-SemiBold_1.eot');
+    src: url('Dosis-SemiBold_1.eot?#iefix') format('embedded-opentype'),
+        url('Dosis-SemiBold_1.woff2') format('woff2'),
+        url('Dosis-SemiBold_1.woff') format('woff'),
+        url('Dosis-SemiBold_1.ttf') format('truetype'),
+        url('Dosis-SemiBold_1.svg#Dosis-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('LibreBaskerville-Italic.eot');
+    src: url('LibreBaskerville-Italic.eot?#iefix') format('embedded-opentype'),
+        url('LibreBaskerville-Italic.woff2') format('woff2'),
+        url('LibreBaskerville-Italic.woff') format('woff'),
+        url('LibreBaskerville-Italic.ttf') format('truetype'),
+        url('LibreBaskerville-Italic.svg#LibreBaskerville-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('LibreBaskerville-Regular_1.eot');
+    src: url('LibreBaskerville-Regular_1.eot?#iefix') format('embedded-opentype'),
+        url('LibreBaskerville-Regular_1.woff2') format('woff2'),
+        url('LibreBaskerville-Regular_1.woff') format('woff'),
+        url('LibreBaskerville-Regular_1.ttf') format('truetype'),
+        url('LibreBaskerville-Regular_1.svg#LibreBaskerville-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('LibreBaskerville-Italic_1.eot');
+    src: url('LibreBaskerville-Italic_1.eot?#iefix') format('embedded-opentype'),
+        url('LibreBaskerville-Italic_1.woff2') format('woff2'),
+        url('LibreBaskerville-Italic_1.woff') format('woff'),
+        url('LibreBaskerville-Italic_1.ttf') format('truetype'),
+        url('LibreBaskerville-Italic_1.svg#LibreBaskerville-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+

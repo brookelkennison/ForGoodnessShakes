@@ -1,17 +1,106 @@
-@import 'utilities/variables';
-
+@import '../utilities/variables';
 
 .site-footer {
-    top: 400px;
+    max-height: 400px;
+	top: 400px;
+	position: relative;
+	background-color: $yellow;
+	margin-top: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	& .footer-logo {
+		width: 220px;
+		bottom: 115px;
+		position: relative;
+	}
+	.footer-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+		position: relative;
+		bottom: 195px;
+	}
+	.footer-social {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		img {
+			height: 50px;
+			margin-right: 20px;
+		}
+		button {
+			padding: 18px;
+			font-size: 24px;
+			font-family: 'Dosis';
+			font-weight: 600;
+			/* height: 50px; */
+			background: #ff914d;
+			color: white;
+			border: none;
+			border-radius: 38px;
+		}
+	}
+}
+.column {
+	padding: 20px;
+	> p {
+		padding: 5px;
+		margin: 0;
+	}
+	a {
+		font-family: 'Libre Baskerville Regular';
+		color: black;
+		font-size: 18px;
+	}
+	h2 {
+		font-family: 'Dosis';
+		font-size: 46px;
+		margin: auto 0;
+		text-align: center;
+        color: $pink-main;
+	}
+    > img {
+        height: 300px
+    }
+}
+
+.website-copyright {
+    font-size: 13px;
+    top: 200px;
     position: relative;
-    height: 300px;
-    background-color: $yellow;
     margin-top: 200px;
     display: flex;
-    justify-content: center;
-    & img {
-        width: 220px;
-        bottom: 100px;
-        position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-image {
+    justify-self: self-end;
+}
+
+@media (max-width: 800px) {
+    .website-copyright {
+        top: 0 !important;
+    }
+    .site-footer {
+        top: 200px !important;
+    }
+    .footer-container {
+        display: flex !important;
+        flex-direction: column;
+		grid-template-columns: unset !important;
+		gap: 20px;
+		position: relative;
+		top: -195px;
+	}
+    .site-footer {
+        max-width: unset;
+    }
+    .footer-image {
+        display: none;
+    }
+    .footer-heading {
+        display: none
     }
 }
