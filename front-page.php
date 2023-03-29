@@ -2,7 +2,7 @@
 
 <section class="">
     <div class="side-spacing cta">
-        <h1>Traveling to serve you gourmet milkshakes</h1>
+        <h1><?php echo get_theme_mod('main_call_to_action_text') ?></h1>
         <a class="center-text" href="<?php echo  site_url() . '/events' ?>">WE WILL SEE YOU THERE -></a>
     </div>
     <img class="truckstripe" src="<?php echo get_theme_file_uri('./assets/retro-stripe-and-truck.png') ?>" alt="" />
@@ -84,9 +84,7 @@
     </div>
     <hb></hb>
     <div class="milkshake-grid">
-        <img src="<?php echo get_theme_file_uri('./assets/shake1.png') ?>" alt="" />
-        <img src="<?php echo get_theme_file_uri('./assets/shake2.png') ?>" alt="" />
-        <img src="<?php echo get_theme_file_uri('./assets/shake3.png') ?>" alt="" />
+        <img src="<?php echo get_theme_mod('milkshakes_image') ?>" alt="" />
     </div>
     <hb></hb>
     <div class="side-spacing milkshakes">
@@ -102,7 +100,7 @@
 </section>
 <hb class="move-down"></hb>
 <section class="giving-back move-down">
-    <img src="<?php echo get_theme_file_uri('./assets/giving-back.png') ?>" alt="" />
+    <img src="<?php echo get_theme_mod('giving_back_image') ?>" alt="" />
     <div class="side-spacing">
         <p>By providing a quality product to our customers, we promise to donate 30% of our proceeds to areas of need in our community ...</p>
         <a href="<?php echo  site_url() . '/events' ?>">HELP US MAKE A DIFFERENCE -></a>

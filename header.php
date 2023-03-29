@@ -33,8 +33,8 @@
                         } ?>
                     </div>
                     <div class="menu-social">
-                        <img src="<?php echo get_theme_file_uri('./assets/facebook.png') ?>" alt="facebook">
-                        <img src="<?php echo get_theme_file_uri('./assets/instagram.png') ?>" alt="instagram">
+                        <a href="https://www.facebook.com/shakes4wabash"><img src="<?php echo get_theme_file_uri('./assets/facebook.png') ?>" alt="facebook"></a>
+                        <a href="https://www.instagram.com/shakes4wabash/"><img src="<?php echo get_theme_file_uri('./assets/instagram.png') ?>" alt="instagram"></a>
                     </div>
                 </nav>
                 <img class="mobile-menu-icon" src="<?php echo get_theme_file_uri('./assets/menu-rounded.png') ?>" alt="Show" />

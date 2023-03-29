@@ -5,9 +5,9 @@
     <div class="footer-container">
         <div class="column">
             <div class="footer-social">
-                <img src="<?php echo get_theme_file_uri('./assets/facebook.png') ?>" alt="facebook">
-                <img src="<?php echo get_theme_file_uri('./assets/instagram.png') ?>" alt="instagram">
-                <button>contact</button>
+                <a href="https://www.facebook.com/shakes4wabash"><img src="<?php echo get_theme_file_uri('./assets/facebook.png') ?>" alt="facebook"></a>
+                <a href="https://www.instagram.com/shakes4wabash/"><img src="<?php echo get_theme_file_uri('./assets/instagram.png') ?>" alt="instagram"></a>
+                <a href="<?php echo  site_url() . '/contact' ?>"><button>contact</button></a>
             </div>
             <?php $args = array(
                 'sort_order' => 'asc',

@@ -20,6 +20,8 @@ add_action('init', 'register_my_menus');
 
 function wordpress_customizer($wp_customize)
 {
+    $wp_customize->remove_section('settings');
+    // About Us
     $wp_customize->add_section(
         'main_section_options',
         array(
@@ -27,6 +29,29 @@ function wordpress_customizer($wp_customize)
         )
     );
 
+    $wp_customize->add_setting(
+        'main_call_to_action_text',
+        array(
+            'default' => '',
+            'type' => 'theme_mod',
+            'transport'  => 'postMessage',
+        )
+    );
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'main_text_body',
+            array(
+                'label'    => __('Call to Action Text', 'main_section'),
+                'section'  => 'main_section_options',
+                'settings' => 'main_call_to_action_text',
+                'type'     => 'text'
+            )
+        )
+    );
+
+    // About Us
     $wp_customize->add_section(
         'about_us_options',
         array(
@@ -55,17 +80,16 @@ function wordpress_customizer($wp_customize)
         )
     );
 
-    $wp_customize->add_setting(
-        'main_section_image',
+    // Giving Back
+    $wp_customize->add_section(
+        'giving_back_options',
         array(
-            'default' => '',
-            'type' => 'theme_mod',
-            'transport'  => 'postMessage',
+            'title' => __('Giving Back', 'giving_back_section')
         )
     );
 
     $wp_customize->add_setting(
-        'main_call_to_action_header',
+        'giving_back_image',
         array(
             'default' => '',
             'type' => 'theme_mod',
@@ -76,30 +100,25 @@ function wordpress_customizer($wp_customize)
     $wp_customize->add_control(
         new WP_Customize_Image_Control(
             $wp_customize,
-            'main_image',
+            'giving_back_image',
             array(
-                'label' => __('Main Image', 'main_section'),
-                'settings' => 'main_section_image',
-                'section' => 'main_section_options'
+                'label' => __('Giving Back Image', 'giving_back'),
+                'settings' => 'giving_back_image',
+                'section' => 'giving_back_options'
             )
         )
     );
 
-    $wp_customize->add_control(
-        new WP_Customize_Control(
-            $wp_customize,
-            'main_text_header',
-            array(
-                'label'    => __('Call to Action Header', 'main_section'),
-                'section'  => 'main_section_options',
-                'settings' => 'main_call_to_action_header',
-                'type'     => 'text'
-            )
+    // Milkshakes
+    $wp_customize->add_section(
+        'milkshakes_options',
+        array(
+            'title' => __('Milkshakes', 'milkshakes_section')
         )
     );
 
     $wp_customize->add_setting(
-        'main_call_to_action_text',
+        'milkshakes_image',
         array(
             'default' => '',
             'type' => 'theme_mod',
@@ -108,14 +127,13 @@ function wordpress_customizer($wp_customize)
     );
 
     $wp_customize->add_control(
-        new WP_Customize_Control(
+        new WP_Customize_Image_Control(
             $wp_customize,
-            'main_text_body',
+            'milkshakes_image',
             array(
-                'label'    => __('Call to Action Text', 'main_section'),
-                'section'  => 'main_section_options',
-                'settings' => 'main_call_to_action_text',
-                'type'     => 'text'
+                'label' => __('Milkshakes Image', 'milshakes'),
+                'settings' => 'milkshakes_image',
+                'section' => 'milkshakes_options',
             )
         )
     );

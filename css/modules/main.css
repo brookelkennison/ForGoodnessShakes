@@ -186,7 +186,7 @@ a:hover {
   display: flex;
   justify-content: center; }
   .milkshake-grid > img {
-    width: 33%; }
+    width: 100%; }
 
 .milkshakes p {
   text-align: left;

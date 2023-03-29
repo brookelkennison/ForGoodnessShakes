@@ -98,7 +98,7 @@
       font-family: 'Dosis';
       font-weight: 700;
       font-size: 20px; }
-  .site-header__menu .menu-social > img {
+  .site-header__menu .menu-social img {
     height: 35px;
     padding: 5px; }
 
@@ -308,7 +308,7 @@ a:hover {
   display: flex;
   justify-content: center; }
   .milkshake-grid > img {
-    width: 33%; }
+    width: 100%; }
 
 .milkshakes p {
   text-align: left;
@@ -478,7 +478,7 @@ a:hover {
     text-align: center;
     color: #E65CC8; }
   .column > img {
-    height: 300px; }
+    max-height: 300px; }
 
 .website-copyright {
   font-size: 13px;
