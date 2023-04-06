@@ -3,7 +3,9 @@
 get_header();
 ?>
 
-<div>Auburn Theme</div>
+<a href="<?php echo  site_url() ?>" style="text-align-last: center;">
+    <p>Back to Home</p>
+</a>
 
 
 <?php

@@ -3,7 +3,7 @@
 <section class="">
     <div class="side-spacing cta">
         <h1><?php echo get_theme_mod('main_call_to_action_text') ?></h1>
-        <a class="center-text" href="<?php echo  site_url() . '/events' ?>">WE WILL SEE YOU THERE -></a>
+        <a class="center-text" href="<?php echo  site_url() . '/event-list' ?>">WE WILL SEE YOU THERE -></a>
     </div>
     <img class="truckstripe" src="<?php echo get_theme_file_uri('./assets/retro-stripe-and-truck.png') ?>" alt="Retro Stripe Decoration" />
 </section>
@@ -78,7 +78,7 @@
         </div>
     </div>
     <div class="move-up flex-column view-all-events">
-        <a style="color: #ff914e" href="<?php echo  site_url() . '/events' ?>">SEE ALL EVENTS -></a>
+        <a style="color: #ff914e" href="<?php echo  site_url() . '/event-list' ?>">SEE ALL EVENTS -></a>
         <a style="color: #e661c9" href="<?php echo  site_url() . '/contact' ?>">BOOK US FOR AN EVENT -></a>
     </div>
 </section>
@@ -118,7 +118,7 @@ $givingBackImage_alt = get_post_meta($givingBackImage_id, '_wp_attachment_image_
     <img src="<?php echo $givingBackImage ?>" alt="<?php echo $givingBackImage_alt ?>" />
     <div class="side-spacing">
         <p>By providing a quality product to our customers, we promise to donate 30% of our proceeds to areas of need in our community ...</p>
-        <a href="<?php echo  site_url() . '/events' ?>">HELP US MAKE A DIFFERENCE -></a>
+        <a href="<?php echo  site_url() . '/event-list' ?>">HELP US MAKE A DIFFERENCE -></a>
     </div>
 </section>
 
